@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+      crossorigin="anonymous" 
+    />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!------------------------------------------ Modal ---------------------------------------------->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">SUBSCRIBE</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <label id="exampleModalLabel2">Join our mailing list to receive updates on available dates and special offers</label><br>
+            <div class="modal-body">
+                
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter e-Mail">
+            </div>
+            <br>
+            <div class="modal-footer">
+                <div class="d-grid gap-2 col-sm-4">
+                    <button class="btn btn-success" type="submit"> SubScribe </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none">
+        <div class="container-sm">
+          <a class="navbar-brand" href="#">Rental</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!--------------------------------------------------------------------------->
+    <div class="container-lg d-lg-block collapse navbar-collapse h-100 fixed-top"
+    id="navbarSupportedContent">
+    <div class="row h-100">
+        <div class="col col-sm-8 col-md-6 col-lg-3 h-100 overflow-auto">
+          <div class="row">
+            <div class="col bg-light px-4">
+              <button
+                type="button"
+                class="btn-close d-lg-none"
+                aria-label="Close"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              ></button>
+            <div class="mb-1">
+                <!-----------------------------Left Side---------------------------------->
+                <br>
+                <h3>Rental</h3>
+                <h3>from $99</h3>
+                <h6>per night</h6><br><br>
+                <!-----------------------------Form---------------------------------->
+                <form>
+                    <div>
+                        <label><i class="fa fa-calendar-check-o"></i> Check In</label>
+                        <input class ="form-control" type="text" placeholder="DD MM YYYY" name="CheckIn" aria-describedby="inputGroupPrepend2" required> <br>
+                        <label><i class="fa fa-calendar-o"></i> Check Out</label>
+                        <input class="form-control" type="text" placeholder="DD MM YYYY" name="CheckOut" aria-describedby="inputGroupPrepend2" required><br>
+                        <p><label><i class="fa fa-male"></i> Adults</label></p>
+                        <input class="form-control" type="number" value="1" name="Adults" min="1" max="6"> <br>       
+                        <p><label><i class="fa fa-child"></i> Kids</label></p>
+                        <input class="form-control" type="number" value="0" name="Kids" min="0" max="6"><br>
+                        <div class="d-grid gap-2 col-12">
+                            <button class="btn btn-success" type="submit"><i class="fa fa-search"></i> Search availability </button>
+                        </div>
+                    </div>
+                </form>
+                <br><br>
+                <!------------------------------------------ Links ---------------------------------------------->
+                <div class="d-grid gap-2 col-12">
+                <a href="#apartment" ><i class="fa fa-building"></i> Apartment</a><br>
+                <a data-bs-toggle="modal" href="#exampleModal"><i class="fa fa-rss"></i> SubScribe</a><br>
+                <a href="#contact" ><i class="fa fa-envelope"></i> Contact</a><br>
+                </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>
+<div class="container-lg">
+  <div class="row">
+     <div class="col offset-3 custom-reset col-lg-9">
+           <div class="p-3">
+             <h3 class="display-6 text-success mb-3" id="apartment">The Apartment</h3>
+             <div class="card mb-3">
+                 <img src="img/livingroom.jpg" class="card-img" alt="...">
+             </div>
+             <div class="row">
+               <div class="col"  >
+                 <img id="image"
+                   src="img/livingroom (1).jpg" class="img-fluid" />
+               </div>
+               <div class="col">
+                 <img id="image" src="img/livingroom2.jpg" class="img-fluid"/>
+               </div>
+               <div class="col">
+                 <img id="image" src="img/diningroom.jpg" class="img-fluid"/>
+               </div>
+               <div class="col">
+                 <img id="image" src="img/bedroom.jpg" class="img-fluid"/>
+               </div>
+             </div>
+           </div>
+           
+           <h5 class="mt-4">The space</h5>
+           <br>
+           <div class="row">
+                 <div class="col-6 col-sm-4"><i class="fa fa-fw fa-male"></i> Max people: 4</div>
+                 <div class="col-6 col-sm-4"><i class="fa fa-fw fa-clock-o"></i> Check In: After 3PM</div>
+                 <div class="w-100"></div><br>
+                 <div class="col-6 col-sm-4"><i class="fa fa-fw fa-bath"></i> Bathrooms: 2</div>
+                 <div class="col-6 col-sm-4"><i class="fa fa-fw fa-clock-o"></i> Check Out: 12PM</div>
+                 <div class="w-100"></div><br>
+                 <div class="col-6 col-sm-4"><i class="fa fa-fw fa-bed"></i> Bedrooms: 1</div>
+           </div>
+           <hr>
+
+     <!-------------------------------Right Side------------------------------------------------>
+     
+                  <!------------------------------------------------------------------------------->
+                  <h5 class="mt-4">Amenities</h5>
+                  <br>
+                  <div class="row">
+                        <div class="col-6 col-sm-4"><i class="fa fa-fw fa-shower"></i> Shower</div>
+                        <div class="col-6 col-sm-4"><i class="fa fa-fw fa-cutlery"></i> Kitchen</div>
+                        <div class="w-100"></div><br>
+                        <div class="col-6 col-sm-4"><i class="fa fa-fw fa-wifi"></i> WiFi</div>
+                        <div class="col-6 col-sm-4"><i class="fa fa-fw fa-thermometer"></i> Heating</div>
+                        <div class="w-100"></div><br>
+                        <div class="col-6 col-sm-4"><i class="fa fa-fw fa-tv"></i> TV</div>
+                        <div class="col-6 col-sm-4"><i class="fa fa-fw fa-wheelchair"></i> Accessible</div>
+                  </div>
+                  <hr>
+                  <!------------------------------------------------------------------------------->
+                  <h5 class="mt-4">Extra Info</h5>
+                  <br>
+                  <p>Our apartment is really clean and we like to keep it that way. 
+                      Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p>We accept: <i class="fa fa-credit-card "></i> <i class="fa fa-cc-mastercard "></i>
+                           <i class="fa fa-cc-amex"></i>
+                           <i class="fa fa-cc-cc-visa"></i><i class="fa fa-cc-paypal"></i></p>
+                    
+                  <hr>
+                  <!------------------------------------------------------------------------------->
+                  <h5 class="mt-4">Rules</h5>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>Subscribe to receive updates on available dates and special offers.</p>
+                  <div class="d-grid gap-2 col-4">
+                      <button class="btn btn-success" type="submit"><i class="fa fa-search"></i> Search availability </button>
+                  </div>
+                  <hr>
+                  <!------------------------------------------------------------------------------->
+                  <h5 class="mt-4" id="contact">Contact</h5>
+                  <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+                  <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+                  <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                  <br><p>Questions? Go ahead, ask them:</p>
+                  <input class ="form-control" type="text" placeholder="Name" name="Name" required> <br>
+                  <input class="form-control" type="text" placeholder="E-Mail" name="E-Mail" required><br>
+                  <input class="form-control" type="text" placeholder="Message" name="Message" required><br>
+                  <div class="d-grid gap-2 col-4">
+                      <button class="btn btn-success" type="submit"> Send Message </button>
+                  </div>
+                  <!------------------------------------------------------------------------------->
+                </div>
+            </div>
+         </div>
+     </div>
+</body>
+</html>

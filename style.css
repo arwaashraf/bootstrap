@@ -1,0 +1,50 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        #exampleModalLabel{
+          padding-left: 280px;
+          font-size: 35px;
+      }
+      #exampleModalLabel2
+      {
+        padding-left: 120px;
+          font-size: 16px;
+      }
+      .modal-footer
+      {
+        padding-right: 350px;
+        text-decoration: none;
+        border:none;
+      }
+      .modal-header
+      {
+        text-decoration: none;
+        border:none;
+      }
+      #apartment
+      {
+          font-size: 35px;
+          color: rgb(77, 175, 77);
+      }
+      .card-body
+      {
+          background-color: rgb(233, 227, 227);
+      }
+      #id-card{
+        background-color:white;
+      }
+      
+      .btn:hover{
+          background-color: rgb(196, 193, 193);     
+      }
+      @media screen and (max-width:992px){
+        .custom-reset{
+margin-left: 0;
+        }
+      }
+  h5,h3{
+    font-weight: bold;
+  }
